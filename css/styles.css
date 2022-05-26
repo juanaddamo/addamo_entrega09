@@ -129,7 +129,6 @@ footer{
         box-shadow: .2rem .2rem #B4846C;
         margin: .5rem;
     }
-
 }
 
 /* mq para monitores de 1024px */
@@ -195,6 +194,7 @@ footer{
 
 .carouselSlide{
     grid-template-areas: carouselSlide;
+    margin: 0.5rem;
 }
 
 /* defino media queries para about.html */
@@ -230,7 +230,10 @@ footer{
                         "clasicaTres"
                         "clasicaCuatro"
                         "clasicaCinco"
-                        "clasicaSeis";
+                        "clasicaSeis"
+                        "clasicaSiete"
+                        "clasicaOcho"
+                        "clasicaNueve";
     grid-gap: 0.5rem;
     text-align: center;
 }
@@ -238,53 +241,79 @@ footer{
 .tituloClasica{
     grid-area: tituloClasica;
     justify-self: center;
+    background-color: #d49d81;
+    border-radius: 1rem;
+    width: 310px;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 .clasicaUno{
     grid-area: clasicaUno;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .clasicaDos{
     grid-area: clasicaDos;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .clasicaTres{
     grid-area: clasicaTres;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .clasicaCuatro{
     grid-area: clasicaCuatro;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .clasicaCinco{
     grid-area: clasicaCinco;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .clasicaSeis{
     grid-area: clasicaSeis;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
+}
+
+.clasicaSiete{
+    grid-area: clasicaSiete;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
+}
+
+.clasicaOcho{
+    grid-area: clasicaOcho;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
+}
+
+.clasicaNueve{
+    grid-area: clasicaNueve;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 h3{
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: #d49d81;
-    border-radius: .5rem;
 }
 
 h5{
-    margin: 0.5rem;
-    padding: 0.5rem;
     background-color: #d49d81;
-    border-radius: .5rem;
-    box-shadow: 0.2rem 0.2rem gray;
 }
 
 p{
     padding: 0.5rem;
-}
-
-.formatoImagen{
-    border-radius: 20%
 }
 
 /* defino media queries para tartas.html */
@@ -295,7 +324,9 @@ p{
         grid-template-areas: "tituloClasica tituloClasica"
                             "clasicaUno clasicaDos"
                             "clasicaTres clasicaCuatro"
-                            "clasicaCinco clasicaSeis";
+                            "clasicaCinco clasicaSeis"
+                            "clasicaSiete clasicaOcho"
+                            "clasicaNueve clasicaNueve";
         grid-gap: 0.5rem;
         text-align: center;
     }
@@ -307,7 +338,8 @@ p{
         display: grid;
         grid-template-areas: "tituloClasica tituloClasica tituloClasica"
                             "clasicaUno clasicaDos clasicaTres"
-                            "clasicaCuatro clasicaCinco clasicaSeis";
+                            "clasicaCuatro clasicaCinco clasicaSeis"
+                            "clasicaSiete clasicaOcho clasicaNueve";
         grid-gap: 0.5rem;
         text-align: center;
     }
@@ -335,31 +367,47 @@ h2{
 .tituloBundt{
     grid-area: tituloBundt;
     justify-self: center;
-
+    background-color: #d49d81;
+    border-radius: 1rem;
+    width: 310px;
+    margin: .5rem;
+    padding: .5rem;
 }
 
 .bundtUno{
     grid-area: bundtUno;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .bundtDos{
     grid-area: bundtDos;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .bundtTres{
     grid-area: bundtTres;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .bundtCuatro{
     grid-area: bundtCuatro;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .bundtCinco{
     grid-area: bundtCinco;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 .bundtSeis{
     grid-area: bundtSeis;
+    box-shadow: .3rem .3rem .3rem 0.3rem rgba(0, 0, 0, .2);
+    margin: .5rem;
 }
 
 /* defino media queries para tartas.html */
