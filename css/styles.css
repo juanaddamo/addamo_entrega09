@@ -1,0 +1,427 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo del body */
+body{
+    background-image: url(../img/fondo_annies.png);
+    font-family: 'Open Sans';
+    padding-top: 6.5rem;
+}   
+
+/* estilo del menu */
+.navbar {
+    background-color: #d49d81;
+    font-family:'Open Sans';
+}
+
+.dropdown-menu{
+    background-color: #d49d81;
+}
+
+/* se agranda la imagen del logo del menu*/
+.imagenLogo:hover{
+    transform: scale(1.1) ;
+}
+
+/* estilos del main */
+.estiloIndex{
+    display: grid;
+    grid-template-areas: "saludoUno"
+    "imagenIndex1"
+    "parrafoUno"
+    "parrafoDos"
+    "firma"
+    "imagenInicio1";
+}
+
+.saludoUno{
+    grid-area: saludoUno;
+    text-align: center;  
+}
+
+.imagenIndex1{
+    grid-area: imagenIndex1;
+    justify-self: center;
+}
+
+.parrafoUno{
+    grid-area: parrafoUno;
+    margin: 0.5rem;
+    text-align: center;
+}
+
+.parrafoDos{
+    grid-area: parrafoDos;
+    text-align: center;
+}
+
+.firma{
+    grid-area: firma;
+    text-align: center;
+    font-style: italic;
+}
+
+.imagenInicio1{
+    grid-area: imagenInicio1;
+    justify-self: center;
+    box-shadow: .2rem .2rem #B4846C;
+    margin: .5rem;
+}
+
+.imagenInicio2{
+    display: none;
+}
+
+.imagenInicio3{
+    display: none;
+}
+
+/* estilo de footer */
+footer{
+    margin: .5rem;
+    font-family: 'Open Sans';
+    background-image: linear-gradient(#B4846C, #fcd4c0);
+    text-align: center;
+    color: black;
+}
+
+
+/* defino media queries para index.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloIndex{
+        display: grid;
+        grid-template-areas: "saludoUno saludoUno"
+        "imagenIndex1 imagenIndex1"
+        "parrafoUno parrafoUno"
+        "parrafoDos parrafoDos"
+        "firma firma"
+        "imagenInicio1 imagenInicio2";
+    }
+
+    .parrafoUno{
+        grid-area: parrafoUno;
+        font-size: large;
+    }
+
+    .parrafoDos{
+        grid-area: parrafoDos;
+        font-size: large;
+    }
+
+    .firma{
+        grid-area: firma;
+        font-size: large;
+    }
+
+    .imagenInicio1{
+        grid-area: imagenInicio1;
+    }
+
+    .imagenInicio2{
+        grid-area: imagenInicio2;
+        display: block;
+        justify-self: center;
+        box-shadow: .2rem .2rem #B4846C;
+        margin: .5rem;
+    }
+
+}
+
+/* mq para monitores de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloIndex{
+        display: grid;
+        grid-template-areas: "saludoUno saludoUno saludoUno"
+        "imagenIndex1 imagenIndex1 imagenIndex1"
+        "parrafoUno parrafoUno parrafoUno"
+        "parrafoDos parrafoDos parrafoDos"
+        "firma firma firma"
+        "imagenInicio1 imagenInicio2 imagenInicio3";
+    }
+
+    .parrafoUno{
+        grid-area: parrafoUno;
+    }
+
+    .parrafoDos{
+        grid-area: parrafoDos;
+    }
+
+    .firma{
+        grid-area: firma;
+    }
+
+    .imagenInicio1{
+        grid-area: imagenInicio1;
+    }
+
+    .imagenInicio2{
+        grid-area: imagenInicio2;
+        display: block;
+        justify-self: center;
+    }
+
+    .imagenInicio3{
+        grid-area: imagenInicio3;
+        display: block;
+        justify-self: center;
+        box-shadow: .2rem .2rem #B4846C;
+        margin: .5rem;
+    }
+}
+
+/* estilos para about.html */
+.aboutHistoria1{
+    font-weight: bold;
+}
+
+/* estilo main about */
+.estiloAbout{
+    margin: 0.5rem;
+    display: grid;
+    grid-template-areas: "aboutCompleta"
+    "carouselSlide";
+}
+
+.aboutCompleta{
+    grid-template-areas: aboutCompleta;
+    text-align: justify;
+}
+
+.carouselSlide{
+    grid-template-areas: carouselSlide;
+}
+
+/* defino media queries para about.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloAbout{
+        margin: 0.5rem;
+        display: grid;
+        grid-template-areas: "aboutCompleta carouselSlide";
+        justify-content: center;
+        align-items: center
+    }
+}
+
+/* mq para monitores de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloAbout{
+        margin: 0.5rem;
+        display: grid;
+        grid-template-areas: "aboutCompleta carouselSlide";
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* estilo para tartas.html */
+/* defino el grid para las fotos */
+.estiloTartas{
+    display: grid;
+    grid-template-areas: "tituloClasica"
+                        "clasicaUno"
+                        "clasicaDos"
+                        "clasicaTres"
+                        "clasicaCuatro"
+                        "clasicaCinco"
+                        "clasicaSeis";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.tituloClasica{
+    grid-area: tituloClasica;
+    justify-self: center;
+}
+
+.clasicaUno{
+    grid-area: clasicaUno;
+}
+
+.clasicaDos{
+    grid-area: clasicaDos;
+}
+
+.clasicaTres{
+    grid-area: clasicaTres;
+}
+
+.clasicaCuatro{
+    grid-area: clasicaCuatro;
+}
+
+.clasicaCinco{
+    grid-area: clasicaCinco;
+}
+
+.clasicaSeis{
+    grid-area: clasicaSeis;
+}
+
+h3{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #d49d81;
+    border-radius: .5rem;
+}
+
+h5{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #d49d81;
+    border-radius: .5rem;
+    box-shadow: 0.2rem 0.2rem gray;
+}
+
+p{
+    padding: 0.5rem;
+}
+
+.formatoImagen{
+    border-radius: 20%
+}
+
+/* defino media queries para tartas.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "tituloClasica tituloClasica"
+                            "clasicaUno clasicaDos"
+                            "clasicaTres clasicaCuatro"
+                            "clasicaCinco clasicaSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* mq para desktop de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloTartas{
+        display: grid;
+        grid-template-areas: "tituloClasica tituloClasica tituloClasica"
+                            "clasicaUno clasicaDos clasicaTres"
+                            "clasicaCuatro clasicaCinco clasicaSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+h2{
+    margin: 1rem;
+}
+
+/* estilo para bundtcakes.html */
+/* defino el grid para las fotos */
+.estiloBundt{
+    display: grid;
+    grid-template-areas: "tituloBundt"
+                        "bundtUno"
+                        "bundtDos"
+                        "bundtTres"
+                        "bundtCuatro"
+                        "bundtCinco"
+                        "bundtSeis";
+    grid-gap: 0.5rem;
+    text-align: center;
+}
+
+.tituloBundt{
+    grid-area: tituloBundt;
+    justify-self: center;
+
+}
+
+.bundtUno{
+    grid-area: bundtUno;
+}
+
+.bundtDos{
+    grid-area: bundtDos;
+}
+
+.bundtTres{
+    grid-area: bundtTres;
+}
+
+.bundtCuatro{
+    grid-area: bundtCuatro;
+}
+
+.bundtCinco{
+    grid-area: bundtCinco;
+}
+
+.bundtSeis{
+    grid-area: bundtSeis;
+}
+
+/* defino media queries para tartas.html */
+/* mq para tablets de 768px */
+@media screen and (min-width: 768px) {
+    .estiloBundt{
+        display: grid;
+        grid-template-areas: "tituloBundt tituloBundt"
+                            "bundtUno bundtDos"
+                            "bundtTres bundtCuatro"
+                            "bundtCinco bundtSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* mq para desktop de 1024px */
+@media screen and (min-width: 1024px) {
+    .estiloBundt{
+        display: grid;
+        grid-template-areas: "tituloBundt tituloBundt tituloBundt"
+                            "bundtUno bundtDos bundtTres"
+                            "bundtCuatro bundtCinco bundtSeis";
+        grid-gap: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* estilo para contacto.html */
+.parrafoContacto{
+    text-align: justify;
+    margin: 1rem;
+}
+
+.formContacto{
+    margin: 1rem;
+}
+
+.legendContacto{
+    margin: 0.5rem;
+}
+
+.formCampo{
+    margin: 1rem;
+}
+
+.redesContacto{
+    margin: 1rem;
+    text-align: center;
+}
+
+.imagenContacto{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+/* se agranda la imagen del logo de redes sociales */
+.imagenContacto1:hover{
+    transform: scale(1.3) ;
+}
+
+.imagenContacto2:hover{
+    transform: scale(1.3) ;
+}
