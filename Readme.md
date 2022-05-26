@@ -1,4 +1,4 @@
-# addamo_entrega08
+# addamo_entrega09
 Project name: Annie's Bakery
 
 ## Table of content
@@ -7,12 +7,12 @@ Project name: Annie's Bakery
 3. [FAQs?]
 
 [General information]
-* Desafio complementario: APLICANDO BOOTSTRAP
+* Desafio complementario: SEGUNDA ENTREGA DEL PROYECTO FINAL
 * Curso: Desarrollo Web
 * Centro de Capacitacion Coderhouse (www.coderhouse.com)
 
 Description
-Para el desafio se definion la creacion de un sitio web relacionado a la pasteleria artesanal, en el cual se muestra una breve reseña de la historia de Annie's, los productos y como adquirirlos.
+Para el desafio se definio la creacion de un sitio web relacionado a la pasteleria artesanal, en el cual se muestra una breve reseña de la historia de Annie's, los productos y como adquirirlos.
 
 [Technologies]
 Las tecnologias utiizadas en el proyecto son:
